@@ -1,21 +1,19 @@
-using System; 
- 
-class DIO{
- 
-    static void Main(string[] args) {
-		string[] input;
+using System;
 
-	      input = Console.ReadLine().Split(' ');
-        int cod1 = int.Parse(input[0]);
-        int n1 = int.Parse(input[1]);
-        double valor1 = double.Parse(input[2]);
- 	      input = Console.ReadLine().Split(' ');
-        int cod2 = int.Parse(input[0]);
-	      int n2  = int.Parse(input[1]);
-        double valor2 = double.Parse(input[2]);
-
-        double total = n1*valor1 + n2*valor2;
-        Console.WriteLine("VALOR A PAGAR: R$ {0:F2}", total);
+namespace Start
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, MEDIA;
+            A = double.Parse(Console.ReadLine());
+            B = double.Parse(Console.ReadLine());
+            C = double.Parse(Console.ReadLine());
+            
+            MEDIA =((A*2) + (B*3) + (C*5))/10;
+            Console.WriteLine($"MEDIA = " + MEDIA.ToString("0.0"));
+            Console.ReadKey();
+        }
     }
-
 }
